@@ -4,9 +4,7 @@ My resume, largely sourced and inspired from [Awesome CV](https://github.com/pos
 View the [PDF](https://raw.githubusercontent.com/junhaodong/resume/master/resume.pdf).
 
 <div align="center">
-  <a href="https://raw.githubusercontent.com/junhaodong/resume/master/resume.pdf">
-    <img alt="Résumé" src="https://raw.githubusercontent.com/junhaodong/resume/master/resume.png" width="70%" />
-  </a>
+  <img alt="Résumé" src="https://raw.githubusercontent.com/junhaodong/resume/master/resume.png" width="70%" />
 </div>
 
 ## Quick Start
