@@ -1,10 +1,10 @@
 # resume
-My resume, largely sourced and inspired from [Awesome CV](https://github.com/posquit0/Awesome-CV).
+My resume, based on [Junhao Dong's Resume](https://github.com/junhaodong/resume), which was largely sourced and inspired from [Awesome CV](https://github.com/posquit0/Awesome-CV).
 
-View the [PDF](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/junhaodong/resume/master/resume.pdf).
+View the [PDF](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/yeyande/resume/master/resume.pdf).
 
 <div align="center">
-  <img alt="Résumé" src="https://raw.githubusercontent.com/junhaodong/resume/master/resume.png" width="70%" />
+  <img alt="Résumé" src="https://raw.githubusercontent.com/yeyande/resume/master/resume.png" width="70%" />
 </div>
 
 ## Quick Start

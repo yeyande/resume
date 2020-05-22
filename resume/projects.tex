@@ -2,26 +2,84 @@
 
 \begin{cventries}
   \cventry
-    {} % Empty position
-    {Shellfish} % Project
-    {} % Empty location
-    {} % Empty date
-    {
-      \begin{cvitems} % Description(s) bullet points
-        \item {A command line interface based on the Unix Bash shell, written in C.}
-		\item {Supports EOF (Ctrl-D) and SIGINT (Ctrl-C), multiple commands per line, and chained redirection and piping.}
+    {} {SDX Aggregation Switches} {} {April 2020 - May 2020} {
+      \begin{cvitems}
+        \item {Architected pipeline modifications to test common feature sets on virtualized aggregation switch from on a common software image}
+        \item {Designed fan out procedure for product-specific acceptance tests on feature sets}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Total Access 5000} {} {December 2019 - May 2020} {
+      \begin{cvitems}
+        \item {Architected layout and methodologies of testing framework for TA-5000 GPON OLT line cards}
+        \item {Developed automated provisioning of test assets through Ansible}
+        \item {Redesigned lab network for products under test to ensure isolation and network reliability}
+        \item {Designed infrastructure to ensure products were in a known good state prior to beginning tests}
       \end{cvitems}
     }
 
   \cventry
-    {} % Empty position
-    {Zero Robotics} % Project
-    {} % Empty location
-    {} % Empty date
-    {
-      \begin{cvitems} % Description(s) bullet points
-      	\item {Semifinalist out of 200 teams in MIT's international high school programming competition in C.}
-		\item {Implemented 3D vector physics and game strategy for an autonomous satellite simulation using the ZR API.}
+    {} {Release Notes and Security Documentation} {} {November 2019 - December 2019} {
+      \begin{cvitems}
+        \item {Designed generic templating software for automatically generating release notes and product security documentation for any product}
+        \item {Developed methodology for querying internal ticketing system to populate release notes with new, longstanding, and fixed software issues}
+        \item {Processed internal security scans and tests to populate product security document with known security vulnerabilities}
       \end{cvitems}
     }
+
+  \cventry
+    {} {SDX-6210} {} {March 2017 - December 2019} {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Integrated product into existing Continuous Integration pipeline and developed system level verification pipeline}
+        \item {Developed a CI pipeline information radiator to visualize the current state of software being built and consumed}
+        \item {Developed an automatically updating value stream map to visualize how long and likely a change in code will end up in a releasable build}
+        \item {Designed automated ticket creation and triage process for CI pipeline failures}
+        \item {Containerized virtualized component of the DPoE solution}
+        \item {Created automated virtual machine building for a cloud-based portion of SDN product}
+        \item {Developed deterministic automated build procedure and integration for acquired and newly developed software}
+        \item {Constructed test framework for CI pipelines to validate deployments of the SDX-6210 Remote EPON OLT and the virtualized DPoE controller}
+        \item {Architected layout and methodologies of testing framework for the SDX-6210}
+        \item {Designed high level API library for internal traffic generator hardware to be used in CI testing}
+        \item {Developed automated provisioning of test assets through Ansible}
+        \item {Created test asset diagnostics tooling to quickly identify the cause of test failures}
+        \item {Designed service to provision ONU management software on the SDX-6210 hardware upon contact from virtualized DPoE controller}
+        \item {Created self-checking startup procedure for basic FPGA and Broadcom SOC traffic forwarding}
+        \item {Designed replicatable hardware configurations based around customer deployments of our products}
+        \item {Created automatically deployed and populated DNS docker containers triggered off any changes of test network}
+        \item {Deployed a network of ONOS controlled whitebox switches to test integration of the DPoE solution}
+        \item {Deployed Nagios monitoring software to collect health metrics on test infrastructure}
+      \end{cvitems}
+    }
+
+  \cventry
+    {} {MOSAIC OS} {} {June 2016 - February 2017} {
+      \begin{cvitems}
+        \item {Developed CI pipeline to allow for feature tests to be consumed via a product's capabilities}
+        \item {Designed generic high level libraries to write product-agnostic feature level tests}
+        \item {Created software to selectively reserve test equipment that is required for a particular scenario}
+      \end{cvitems}
+    }
+
+  \cventry
+    {} {Skynet and Hydra} {} {June 2016 - March 2017} {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Developed Angular frontend for hardware inventory and reservation services}
+        \item {Developed Laravel backend for hardware inventory and reservation services}
+        \item {Designed high level groovy and python APIs for interacting with these services}
+        \item {Integrated these services in Continuous Integration pipelines}
+      \end{cvitems}
+    }
+
+  \cventry
+    {} {Hackathons} {} {} {
+      \begin{cvitems}
+        \item {Reduced build time of SDX-6210 software by 70\% by consuming infrequently changing code as binary packages}
+        \item {Containerized applications and services running on SDX-6210 hardware}
+        \item {Created proof of concept for using Alpine packages to maintain dependencies and build infrastructure for internal packages}
+        \item {Automated the population of CVEs and known software issues published in release notes and product security document}
+        \item {Deployed a Github code review tool to keep track of requested changes}
+        \item {Worked on proof of concept Github bot to automatically create pull requests to integrate package dependencies}
+      \end{cvitems}
+    }
+
 \end{cventries}
