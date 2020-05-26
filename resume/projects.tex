@@ -2,77 +2,77 @@
 
 \begin{cventries}
   \cventry
-    {} {Hackathons} {} {} {
+    {} {Hackathons} {} {June 2014 - May 2020} {
       \begin{cvitems}
-        \item {Reduced build time of SDX-6210 software by 70\% by consuming infrequently changing code as binary packages}
-        \item {Containerized services running on SDX-6210 hardware to lay groundwork towards network feature virtualization for the product}
-        \item {Created proof of concept for using Alpine packages to maintain dependencies and build infrastructure for internal packages}
-        \item {Automated the population of CVEs and known software issues published in release notes and product security document}
-        \item {Deployed a Github code review tool to keep track of requested changes}
-        \item {Worked on proof of concept Github bot to automatically create pull requests to integrate package dependencies to provide pre-commit integration on dependency chains}
+      \item {Reduced build time of SDX-6210 software from 2.5 hours to 45 minutes by designing and implementing binary packages for infrequently changing code, then implementing a process to consume those in the product build.}
+        \item {Containerized services running on SDX-6210 hardware to lay groundwork towards network feature virtualization for the product.}
+        \item {Created proof of concept for using Alpine packages to greatly simplify internal package generation and library linking resolutions.}
+        \item {Automated the population of Common Vulnerabilities and Exposures in generated product security document, greatly reducing the time required to release new product security documents.}
+        \item {Deployed a Github code review tool to keep track of requested changes to largely replace dated third party code review software.}
+        \item {Worked on proof of concept Github bot to automatically create pull requests to integrate package dependencies to provide pre-commit integration on dependency chains.}
       \end{cvitems}
     }
 
   \cventry
     {} {SDX Aggregation Switches} {} {April 2020 - May 2020} {
       \begin{cvitems}
-        \item {Architected pipeline modifications to test common feature sets on virtualized aggregation switch from on a common software image and the fan out procedure for product-specific acceptance tests on feature sets}
+        \item {Architected pipeline modifications to test common feature sets on virtualized aggregation switch from on a common software image and the fan out procedure for product-specific acceptance tests on feature sets. This improved test stability, and when failing production code was entered, it failed faster.}
       \end{cvitems}
     }
+
   \cventry
     {} {Total Access 5000} {} {December 2019 - May 2020} {
       \begin{cvitems}
-        \item {Architected layout and methodologies of testing framework for TA-5000 GPON OLT line cards}
-        \item {Developed automated provisioning of test assets for a given testbed, which included SIP and TFTP servers with configuration options provided from the testbed definition}
-        \item {Redesigned lab network to allow for strict layer 3 isolation between testbeds in order to prevent network outages from misbehaving software. This also resulted in a separation of responsibilities for individual routers}
-        \item {Designed testbed configuration restoration process to ensure testbeds were in a known default state prior to beginning tests}
+        \item {Architected layout and methodologies of testing framework for TA-5000 GPON OLT line cards.}
+        \item {Developed automated provisioning of test assets for a given testbed, which included SIP and TFTP servers with configuration options provided from the testbed definition.}
+        \item {Redesigned lab network to allow for strict layer 3 isolation between testbeds in order to prevent network outages from misbehaving software. This network layout was adopted in 4 separate labs.}
+        \item {Designed testbed configuration restoration process to ensure testbeds were in a known default state prior to beginning tests. This made tests more reliable and gave confidence that failures were due to the product itself.}
       \end{cvitems}
     }
 
   \cventry
     {} {Release Notes and Security Documentation} {} {November 2019 - December 2019} {
       \begin{cvitems}
-        \item {Designed generic templating software for automatically generating release notes and product security documentation for any product}
-        \item {Augmented release note generation to populate new, longstanding, and fixed software issues from ticketing system}
-        \item {Processed internal security scans and tests to populate product security document with known security vulnerabilities}
+        \item {Designed generic templating software for automatically generating release notes and product security documentation for any product, which was adopted by all the Software Defined Networking products.}
+        \item {Augmented release note generation to populate new, longstanding, and fixed software issues from ticketing system which reduced the time required to create and approve release notes from 2 weeks to 1 day.}
+        \item {Developed software to process internal security scans and tests to populate product security document with known security vulnerabilities which led to security investigations and the refreshing of automated security tests}
       \end{cvitems}
     }
 
   \cventry
     {} {SDX-6210} {} {March 2017 - December 2019} {
       \begin{cvitems} % Description(s) bullet points
-        \item {Integrated the SDX-6210 product into existing Continuous Integration (CI) pipeline to include tests already written for existing product features}
-        \item {Containerized cloud-based network element controller software to decrease software upgrade time by a factor of 6}
-        \item {Developed system level verification pipeline and test framework to validate the SDX-6210 and the cloud-based controller software a against customer requirements prior to software release}
-        \item {Developed a CI pipeline information radiator and value stream map to visualize how software was flowing through our pipelines, including current state of each stage, delay of code flowing through the system, and the likelihood that the code would fail in each stage, to help identify and address code flow issues within our solution}
-        \item {Organized community/task force for collective ownership and troubleshooting of CI pipeline failures}
-        \item {Designed automated ticket creation and triage process for CI pipeline failures to collect granular metrics and direct the goal of the CI pipeline task force each iteration}
-        \item {Developed deterministic automated build procedure and integration for acquired and newly developed software}
-        \item {Designed high level API library to interface with traffic generator hardware for use in CI testing}
-        \item {Developed automated provisioning of test assets for a given testbed, which included DHCP, TFTP, RADIUS, and TACACS servers with configuration options provided from the testbed definition}
-        \item {Created test asset diagnostics tooling which would dump application state and logs to quickly identify the cause of test failures}
-        \item {Designed service to provision ONU management software on the SDX-6210 hardware upon contact from the network element controller}
-        \item {Created self-checking startup procedure for basic FPGA and Broadcom SOC traffic forwarding}
-        \item {Designed replicatable hardware configurations based around customer deployments of our products, allowing our entire acceptance test suite to be ran on any of our testbeds, and reducing the testbed bringup time 8x}
-        \item {Created automatically deployed and populated DNS docker containers triggered off any changes of the testbed definitions}
-        \item {Deployed a network of ONOS controlled whitebox switches to validate solution interoperability with an ONOS managed network}
-        \item {Deployed Nagios monitoring software to collect health metrics on testbeds and their infrastructure}
+        \item {Integrated the SDX-6210 product into existing Continuous Integration (CI) pipeline to include tests already written for existing product features.}
+        \item {Containerized cloud-based network element controller software to decrease software upgrade time by a factor of 6.}
+        \item {Developed system level verification pipeline and test framework to validate the SDX-6210 and the cloud-based controller software a against customer requirements prior to software release. Sales engineers used the test results as a source of truth for what features could be demonstrated to a customer.}
+        \item {Developed a CI pipeline information radiator and value stream map to visualize how software was flowing through our pipelines which resulted in additional efforts that both reduced the amount of time for software to be ready for release by 2 hours and increased the reliability of the CI pipeline by at least 20\%.}
+        \item {Spearheaded task force for collective ownership and troubleshooting of CI pipeline failures who reduced the amount of failures caused by test infrastructure to under 10\% of the weekly average of 300 builds.}
+        \item {Designed automated ticket creation and triage process for CI pipeline failures to collect granular metrics and direct the goal of the CI pipeline task force each iteration, which was adopted by product management to drive release readiness meetings.}
+        \item {Developed deterministic automated build procedure and integration for acquired and newly developed software.}
+        \item {Designed high level API library to interface with traffic generator hardware for use in CI testing.}
+        \item {Developed automated provisioning of test assets for a given testbed, which included DHCP, TFTP, RADIUS, and TACACS servers with configuration options provided from the testbed definition.}
+        \item {Created test asset diagnostics tooling which would dump application state and logs to quickly identify the cause of test failures.}
+        \item {Designed service to provision management software on the SDX-6210 hardware upon contact from the network element controller to meet security requirements and support high availability.}
+        \item {Designed replicatable hardware configurations based around customer deployments of our products, allowing our entire acceptance test suite to be ran on any of our testbeds, and reducing the testbed bringup time 8x.}
+        \item {Created automatically deployed and populated DNS docker containers triggered off any changes of the testbed definitions, which was regularly used by about 1/3 of the company.}
+        \item {Deployed a network of ONOS controlled whitebox switches to validate solution interoperability with an ONOS managed network.}
+        \item {Deployed Nagios monitoring software to collect health metrics on testbeds and their infrastructure.}
       \end{cvitems}
     }
 
   \cventry
     {} {MOSAIC OS} {} {June 2016 - February 2017} {
       \begin{cvitems}
-        \item {Developed CI pipeline to allow for feature tests to be consumed via a product's capabilities along with generic high level libraries to enable developers to write product-agnostic feature level tests.}
+        \item {Developed CI pipeline to allow for feature tests to be consumed via a product's capabilities along with generic high level libraries to enable developers to write product-agnostic feature level tests, which was the standard CI pipeline for the company for about 4 years}
       \end{cvitems}
     }
 
   \cventry
-    {} {Skynet and Hydra} {} {June 2016 - March 2017} {
+    {} {Skynet and Hydra} {} {June 2014 - March 2017} {
       \begin{cvitems} % Description(s) bullet points
-        \item {Developed testbed inventory and reservation service which was used in CI pipelines, developers, and product stakeholders to visualize and control the priority, allocation, and utilization of testbed resources}
-        \item {Designed test results aggregation software and trend visualization for developers and product stakeholders to understand reliability of a software build or test suite}
-        \item {Created high level groovy and python APIs to allow developers to interact with these services in the same way as the CI pipelines}
+        \item {Developed testbed inventory and reservation service. It was adopted universally in the company by Continuous Integration pipelines, developers, and product stakeholders that had physical hardware requirements to visualize and control the priority, allocation, and utilization of testbed resources.}
+        \item {Designed test results aggregation software and trend visualization that developers and product stakeholders used to ascertain the reliability of a software build or test suite.}
+        \item {Created high level groovy and python APIs to allow developers to interact with these services in the same way as the CI pipelines.}
       \end{cvitems}
     }
 
