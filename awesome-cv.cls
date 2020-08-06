@@ -524,6 +524,29 @@
   \vspace{0.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
+  \ifempty{#3#4}
+    { \cventrysinglecol{#1}{#2}{#5} }
+    { \cventrydoublecol{#1}{#2}{#3}{#4}{#5} }
+%
+}
+
+% Usage: \cventrysinglecol{<position>}{<title>}{<description>}
+\newcommand*{\cventrysinglecol}[3] {%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth} R{0}}
+    \ifempty{#1}
+      {\entrytitlestyle{#2} \\
+        \multicolumn{1}{L{\textwidth}}{\descriptionstyle{#3}}}
+      {\ifempty{#2}
+          {\entrypositionstyle{#1} \\}
+          {\entrytitlestyle{#2} \\
+            \entrypositionstyle{#1} \\}
+        \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#3}}}
+    \end{tabular*}
+  %
+}
+
+% Usage: \cventrydoublecol{<position>}{<title>}{<location>}{<date>}{<description>}
+\newcommand*{\cventrydoublecol}[5] {%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#1#3#4}
       {\entrytitlestyle{#2} \\
@@ -533,7 +556,13 @@
           {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
             \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
         \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
-  \end{tabular*}%
+  \end{tabular*}
+  %
+}
+
+\newcommand*{\cvtechnologies}[1]{%
+  \entrypositionstyle{Technologies: #1}
+  %
 }
 
 % Define an environment for cvsubentry
