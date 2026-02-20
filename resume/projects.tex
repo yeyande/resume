@@ -2,7 +2,63 @@
 
 \begin{cventries}
   \cventry
-    {} {Hackathons} {} {} {
+    {} {CI/CD Platform} {UtilityAPI} {} {
+      \begin{cvitems}
+        \item {Improved CI testing to reduce developer cycle times from 7 hours to 15 minutes.}
+        \item {Developed platform for designing and deploying new services using AWS serverless infrastructure while providing a robust development setup mirroring production.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Infrastructure as Code} {UtilityAPI} {} {
+      \begin{cvitems}
+        \item {Designed Infrastructure as Code definitions for service configuration and resource deployment scalable across all environments, resulting in a 10x speedup in User Acceptance Test, Disaster Recovery, and Penetration testing environmental deployments.}
+        \item {Standardized configuration between bespoke services to reduce extraneous costs.}
+        \item {Simplified SOC2 auditing by ensuring infrastructure was reflected in Terraform HCL, and security requirements could be validated by inspecting the Terraform.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Containerization} {UtilityAPI} {} {
+      \begin{cvitems}
+        \item {Containerized existing services, resulting in faster in developer CI cycle times to reduce from 7 hours to 15 minutes, improving deployment reliability, and reducing deployment by half.}
+        \item {Reduced build times from 30 minutes to 2 minutes by building each service independently.}
+        \item {Implemented an artifact promotion process to further save cycle time by removing redundant builds.}
+        \item {Reduced deployment times of containerized services from 40 minutes to 3 minutes.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Bulk Data Exchange} {UtilityAPI} {} {
+      \begin{cvitems}
+        \item {Collaborated with engineers to architect a template for FastAPI-based serverless applications which can be created and deployed within 10 minutes.}
+        \item {Created an ETL pipeline using AWS MWAA and Glue to transform utility data in large batches.}
+        \item {Extended serverless applications to provide optional datastores for persistent data used within our ETL pipeline.}
+        \item {Designed a local-development harness that mimics production, enabling rapid prototyping and design for APIs and application behavior.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Utility Data Exchange} {UtilityAPI} {} {
+      \begin{cvitems}
+        \item {Standardized UDX products to provide a replicatable configuration while leaving them open for functional extensions.}
+        \item {Coordinated with customers to organize large-scale data ingestion of utility billing data.}
+        \item {Implemented metrics and alarms for data ingest observability.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Observability, Metrics, and Recovery} {UtilityAPI} {} {
+      \begin{cvitems}
+        \item {Architected observability dashboards to trace user requests through services, resulting in Mean-Time-to-Recovery improvements of 300\% or more.}
+        \item {Designed reliability dashboard to provide at-a-glance how many customers are properly receiving data within our SLAs, with support for grouping for Customer Success to have visibility for accurate issue triage.}
+        \item {Authored runbooks for troubleshooting during an incident, as well as fixes for common issues to be automated in the future.}
+        \item {Automated multiple application incidents to reduce engineering fatigue for routine tasks.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Release-based deployments} {UtilityAPI} {} {
+      \begin{cvitems}
+        \item {Implemented a release-based deployment process for improved build reproducibility, a directly auditable Software Development Lifecycle, and deterministic configuration for deployed software.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Hackathons} {ADTRAN} {} {
       \begin{cvitems}
       \item {Reduced build time of SDX-6210 software from 2.5 hours to 45 minutes by designing and implementing binary packages for infrequently changing code, then implementing a process to consume those in the product build.}
         \item {Containerized services running on SDX-6210 hardware to lay groundwork towards network feature virtualization for the product.}
@@ -14,14 +70,14 @@
     }
 
   \cventry
-    {} {SDX Aggregation Switches} {} {} {
+    {} {SDX Aggregation Switches} {ADTRAN} {} {
       \begin{cvitems}
         \item {Architected pipeline modifications to test common feature sets on virtualized aggregation switch from on a common software image and the fan out procedure for product-specific acceptance tests on feature sets. This improved test stability, and when failing production code was entered, it failed faster.}
       \end{cvitems}
     }
 
   \cventry
-    {} {Total Access 5000} {} {} {
+    {} {Total Access 5000} {ADTRAN} {} {
       \begin{cvitems}
         \item {Architected layout and methodologies of testing framework for TA-5000 GPON OLT line cards.}
         \item {Developed automated provisioning of test assets for a given testbed, which included SIP and TFTP servers with configuration options provided from the testbed definition.}
@@ -40,7 +96,7 @@
     }
 
   \cventry
-    {} {SDX-6210} {} {} {
+    {} {SDX-6210} {ADTRAN} {} {
       \begin{cvitems} % Description(s) bullet points
         \item {Integrated the SDX-6210 product into existing Continuous Integration (CI) pipeline to include tests already written for existing product features.}
         \item {Containerized cloud-based network element controller software to decrease software upgrade time by a factor of 6.}
@@ -68,68 +124,11 @@
     }
 
   \cventry
-    {} {Skynet and Hydra} {} {} {
+    {} {Skynet and Hydra} {ADTRAN} {} {
       \begin{cvitems} % Description(s) bullet points
         \item {Developed testbed inventory and reservation service. It was adopted universally in the company by Continuous Integration pipelines, developers, and product stakeholders that had physical hardware requirements to visualize and control the priority, allocation, and utilization of testbed resources.}
         \item {Designed test results aggregation software and trend visualization that developers and product stakeholders used to ascertain the reliability of a software build or test suite.}
         \item {Created high level groovy and python APIs to allow developers to interact with these services in the same way as the CI pipelines.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {} {CI/CD Platform} {} {} {
-      \begin{cvitems}
-        \item {Improved CI testing to reduce developer cycle times from 7 hours to 15 minutes.}
-        \item {Developed platform for designing and deploying new services using AWS serverless infrastructure while providing a robust development setup mirroring production.}
-      \end{cvitems}
-    }
-  \cventry
-    {} {Infrastructure as Code} {} {} {
-      \begin{cvitems}
-        \item {Designed Infrastructure as Code definitions for service configuration and resource deployment scalable across all environments, resulting in a 10x speedup in User Acceptance Test, Disaster Recovery, and Penetration testing environmental deployments.}
-        \item {Standardized configuration between bespoke services to reduce extraneous costs.}
-        \item {Simplified SOC2 auditing by ensuring infrastructure was reflected in Terraform HCL, and security requirements could be validated by inspecting the Terraform.}
-      \end{cvitems}
-    }
-  \cventry
-    {} {Containerization} {} {} {
-      \begin{cvitems}
-        \item {Containerized existing services, resulting in faster in developer CI cycle times to reduce from 7 hours to 15 minutes, improving deployment reliability, and reducing deployment by half.}
-        \item {Reduced build times from 30 minutes to 2 minutes by building each service independently.}
-        \item {Implemented an artifact promotion process to further save cycle time by removing redundant builds.}
-        \item {Reduced deployment times of containerized services from 40 minutes to 3 minutes.}
-      \end{cvitems}
-    }
-  \cventry
-    {} {Bulk Data Exchange} {} {} {
-      \begin{cvitems}
-        \item {Collaborated with engineers to architect a template for FastAPI-based serverless applications which can be created and deployed within 10 minutes.}
-        \item {Created an ETL pipeline using AWS MWAA and Glue to transform utility data in large batches.}
-        \item {Extended serverless applications to provide optional datastores for persistent data used within our ETL pipeline.}
-        \item {Designed a local-development harness that mimics production, enabling rapid prototyping and design for APIs and application behavior.}
-      \end{cvitems}
-    }
-  \cventry
-    {} {Utility Data Exchange} {} {} {
-      \begin{cvitems}
-        \item {Standardized UDX products to provide a replicatable configuration while leaving them open for functional extensions.}
-        \item {Coordinated with customers to organize large-scale data ingestion of utility billing data.}
-        \item {Implemented metrics and alarms for data ingest observability.}
-      \end{cvitems}
-    }
-  \cventry
-    {} {Observability, Metrics, and Recovery} {} {} {
-      \begin{cvitems}
-        \item {Architected observability dashboards to trace user requests through services, resulting in Mean-Time-to-Recovery improvements of 300\% or more.}
-        \item {Designed reliability dashboard to provide at-a-glance how many customers are properly receiving data within our SLAs, with support for grouping for Customer Success to have visibility for accurate issue triage.}
-        \item {Authored runbooks for troubleshooting during an incident, as well as fixes for common issues to be automated in the future.}
-        \item {Automated multiple application incidents to reduce engineering fatigue for routine tasks.}
-      \end{cvitems}
-    }
-  \cventry
-    {} {Release-based deployments} {} {} {
-      \begin{cvitems}
-        \item {Implemented a release-based deployment process for improved build reproducibility, a directly auditable Software Development Lifecycle, and deterministic configuration for deployed software.}
       \end{cvitems}
     }
 
