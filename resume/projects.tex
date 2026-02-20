@@ -80,13 +80,59 @@
     {} {CI/CD Platform} {} {} {
       \begin{cvitems}
         \item {Improved CI testing to reduce developer cycle times from 7 hours to 15 minutes.}
-        \item {Implemented a release-based deployment process for improved build reproducibility, a directly auditable Software Development Lifecycle, and deterministic configuration for deployed software.}
-        \item {Designed Infrastructure as Code definitions for service configuration and resource deployment scalable across all environments, resulting in a 10x speedup in User Acceptance Test, Disaster Recovery, and Penetration testing environmental deployments.}
-        \item {Architected observability dashboards to trace user requests through services, resulting in Mean-Time-to-Recovery improvements of 300% or more.}
-        \item {Standardized configuration between bespoke services to reduce extraneous costs.}
-        \item {Containerized existing services, resulting in faster in developer CI cycle times to reduce from 7 hours to 15 minutes, improving deployment reliability, and reducing deployment by half.}
         \item {Developed platform for designing and deploying new services using AWS serverless infrastructure while providing a robust development setup mirroring production.}
       \end{cvitems}
     }
+  \cventry
+    {} {Infrastructure as Code} {} {} {
+      \begin{cvitems}
+        \item {Designed Infrastructure as Code definitions for service configuration and resource deployment scalable across all environments, resulting in a 10x speedup in User Acceptance Test, Disaster Recovery, and Penetration testing environmental deployments.}
+        \item {Standardized configuration between bespoke services to reduce extraneous costs.}
+        \item {Simplified SOC2 auditing by ensuring infrastructure was reflected in Terraform HCL, and security requirements could be validated by inspecting the Terraform.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Containerization} {} {} {
+      \begin{cvitems}
+        \item {Containerized existing services, resulting in faster in developer CI cycle times to reduce from 7 hours to 15 minutes, improving deployment reliability, and reducing deployment by half.}
+        \item {Reduced build times from 30 minutes to 2 minutes by building each service independently.}
+        \item {Implemented an artifact promotion process to further save cycle time by removing redundant builds.}
+        \item {Reduced deployment times of containerized services from 40 minutes to 3 minutes.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Bulk Data Exchange} {} {} {
+      \begin{cvitems}
+        \item {Collaborated with engineers to architect a template for FastAPI-based serverless applications which can be created and deployed within 10 minutes.}
+        \item {Created an ETL pipeline using AWS MWAA and Glue to transform utility data in large batches.}
+        \item {Extended serverless applications to provide optional datastores for persistent data used within our ETL pipeline.}
+        \item {Designed a local-development harness that mimics production, enabling rapid prototyping and design for APIs and application behavior.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Utility Data Exchange} {} {} {
+      \begin{cvitems}
+        \item {Standardized UDX products to provide a replicatable configuration while leaving them open for functional extensions.}
+        \item {Coordinated with customers to organize large-scale data ingestion of utility billing data.}
+        \item {Implemented metrics and alarms for data ingest observability.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Observability, Metrics, and Recovery} {} {} {
+      \begin{cvitems}
+        \item {Architected observability dashboards to trace user requests through services, resulting in Mean-Time-to-Recovery improvements of 300\% or more.}
+        \item {Designed reliability dashboard to provide at-a-glance how many customers are properly receiving data within our SLAs, with support for grouping for Customer Success to have visibility for accurate issue triage.}
+        \item {Authored runbooks for troubleshooting during an incident, as well as fixes for common issues to be automated in the future.}
+        \item {Automated multiple application incidents to reduce engineering fatigue for routine tasks.}
+      \end{cvitems}
+    }
+  \cventry
+    {} {Release-based deployments} {} {} {
+      \begin{cvitems}
+        \item {Implemented a release-based deployment process for improved build reproducibility, a directly auditable Software Development Lifecycle, and deterministic configuration for deployed software.}
+      \end{cvitems}
+    }
+
+
 
 \end{cventries}
